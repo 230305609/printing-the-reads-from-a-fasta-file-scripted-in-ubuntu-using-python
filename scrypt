@@ -1,0 +1,13 @@
+import sys
+# Para ler o arquivo
+file = sys.argv[1]
+# open_file minha variavel
+# file e para poder abrir qualquer arquivo
+# abrir arquivo em mode de leitura
+open_file = open(file,'r')
+# para linha em open_file
+for linha in open_file:
+    # se começar com >
+    if linha.startswith('>'):
+        # imprimir a linha
+        print(linha)
